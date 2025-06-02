@@ -7,6 +7,7 @@ import Sidebar from "../components/sidebar";
 import Feed from "../components/feed";
 import FeaturedMemesSection from "../components/featuredMemesSection";
 import CreatorSection from "../components/creatorSection";
+import NewsLetterSection from "../components/newsLetterSection";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -183,6 +184,7 @@ export default function Home() {
         <Feed memes={memes} />
         <FeaturedMemesSection memes={featuredMemes} />
         <CreatorSection topCreators={topCreators} />
+        <NewsLetterSection />
       </div>
       <Footer />
     </div>
