@@ -180,87 +180,15 @@ export default function Home() {
           {/* FIM COMPONENTE: CategoriesSection */}
 
           {/* COMPONENTE: Feed */}
-          <section className={styles.feedSection}>
-            <div className={styles.feedHeader}>
-              <h2 className={styles.sectionTitle}>Memes Populares</h2>
-              <div className={styles.feedFilters}>
-                <button className={`${styles.filterButton} ${styles.active}`}>
-                  Recentes
-                </button>
-                <button className={styles.filterButton}>Mais curtidos</button>
-                <button className={styles.filterButton}>Mais comentados</button>
-              </div>
-            </div>
 
-            <div className={styles.feedGrid}>
-              {/* Aqui mapeamos os memes do array para criar múltiplos cards */}
-              {memes.map((meme) => (
-                // COMPONENTE: MemeCard
-                <div key={meme.id} className={styles.memeCard}>
-                  <div className={styles.memeCardHeader}>
-                    <div className={styles.memeAuthor}>
-                      <img src={meme.authorAvatar} alt={meme.author} />
-                      <span>{meme.author}</span>
-                    </div>
-                    <span className={styles.memeCategory}>{meme.category}</span>
-                  </div>
-                  <img
-                    src={meme.image}
-                    alt={meme.title}
-                    className={styles.memeImage}
-                  />
-                  <div className={styles.memeContent}>
-                    <h3 className={styles.memeTitle}>{meme.title}</h3>
-                    <p className={styles.memeDescription}>{meme.description}</p>
 
                     {/* COMPONENTE: InteractionBar */}
                    
                     {/* FIM COMPONENTE: InteractionBar */}
-                  </div>
-                </div>
-                // FIM COMPONENTE: MemeCard
-              ))}
-            </div>
-
-            <button className={styles.loadMoreButton}>
-              Carregar mais memes
-            </button>
-          </section>
           {/* FIM COMPONENTE: Feed */}
 
           {/* COMPONENTE: FeaturedMemesSection */}
-          <section className={styles.featuredSection}>
-            <h2 className={styles.sectionTitle}>Memes em Destaque</h2>
-            <div className={styles.featuredGrid}>
-              {featuredMemes.map((meme) => (
-                // COMPONENTE: FeaturedMemeCard
-                <div key={meme.id} className={styles.featuredCard}>
-                  <div className={styles.featuredImageContainer}>
-                    <img
-                      src={meme.image}
-                      alt={meme.title}
-                      className={styles.featuredImage}
-                    />
-                    {meme.trending && (
-                      <span className={styles.trendingBadge}>🔥 Trending</span>
-                    )}
-                  </div>
-                  <div className={styles.featuredContent}>
-                    <h3 className={styles.featuredTitle}>{meme.title}</h3>
-                    <div className={styles.featuredInfo}>
-                      <span className={styles.featuredAuthor}>
-                        Por {meme.author}
-                      </span>
-                      <span className={styles.featuredCategory}>
-                        {meme.category}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                // FIM COMPONENTE: FeaturedMemeCard
-              ))}
-            </div>
-          </section>
+        
           {/* FIM COMPONENTE: FeaturedMemesSection */}
 
           {/* COMPONENTE: CreatorsSection */}
