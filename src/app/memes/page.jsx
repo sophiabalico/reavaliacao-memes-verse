@@ -201,9 +201,10 @@ export default function Home() {
         </div>
 
         {/* COMPONENTE: Sidebar */}
-              // COMPONENTE: EventCard
+             {/* COMPONENTE: EventCard*/} 
+              {/* FIM COMPONENTE: EventCard */}
            
-              // FIM COMPONENTE: EventCard
+              {/* FIM COMPONENTE: EventCard*/}
         {/* FIM COMPONENTE: Sidebar */}
       </div>
 
