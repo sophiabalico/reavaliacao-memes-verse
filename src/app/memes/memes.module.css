@@ -1,13 +1,4 @@
-/* Estilos gerais */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  min-height: 100vh;
-  color: #333;
-}
+
 
 /* Conteúdo principal com layout de duas colunas */
 .mainContent {
